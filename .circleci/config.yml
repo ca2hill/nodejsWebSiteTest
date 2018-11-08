@@ -34,7 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # start website 
-      - run: sh -c "yarn start" && sleep 30
+      - run: sh -c "yarn start"
       
       # run tests!
       - run: yarn test
