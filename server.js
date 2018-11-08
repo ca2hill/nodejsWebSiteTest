@@ -30,7 +30,7 @@ app.get('/ape', function(req, res) {
         200, 
         { 'Content-Type': 'text/html', 'Content-Length': 50, 'Expires': new Date().toUTCString() }
     );
-    res.end( "APE - npm run test-unit" );
+    res.end( "APE - npm run test-unit \n More stuff" );
 
 });
 
