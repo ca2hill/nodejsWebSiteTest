@@ -34,7 +34,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # start website 
-      - run: sh -c "yarn start"
+      - run: 
+          name: background server for tests
+          command: yarn start
+          background: true
       
       # run tests!
       - run: yarn test
