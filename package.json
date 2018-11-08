@@ -1,0 +1,24 @@
+{
+  "name": "node-1",
+  "version": "0.0.1",
+  "description": "t",
+  "main": "server.js",
+  "author": "Blah",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "browserify": "^13.0.0",
+    "express": "^4.16.4",
+    "method-override": "~2.1.2",
+    "morgan": "~1.2.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "test": "mocha test/unit test/int",
+    "test-unit": "mocha test/unit",
+    "test-int": "mocha test/int"
+  }
+}
